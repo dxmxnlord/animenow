@@ -19,7 +19,7 @@ install:
 	echo "creating binary..."; \
 	touch animenow.sh; \
 	echo "#!/bin/bash" >> animenow.sh; \
-	echo "cd ~/animenow" >> animenow.sh; \
+	echo "cd ~/Animenow" >> animenow.sh; \
 	echo "./start.sh" >> animenow.sh; \
 	chmod 777 animenow.sh; \
 	sudo cp animenow.sh /usr/bin/; \
@@ -30,6 +30,7 @@ install:
 	@echo "...done installing"
 	@cd ..; \
 	rm -fr animenow
+	@cd
 
 uninstall:
 	@echo "uninstalling..."
