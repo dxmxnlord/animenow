@@ -37,5 +37,7 @@ uninstall:
 	cd /usr/bin/; \
 	sudo rm animenow
 	@echo "...done uninstalling"
+	@cd ..; \
+	rm -fr animenow
 
 .PHONY: default install uninstall
