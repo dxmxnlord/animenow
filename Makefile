@@ -1,20 +1,20 @@
 
 default:
 	@echo "creating directories..."
-	@mkdir ~/animenow
+	@mkdir ~/Animenow
 	
 install:
 	@echo "installing animenow..."
 	@echo "copying files to appropriate directories..."
 	@cd main; \
-	cp -p bars.py ~/animenow; \
-	cp -p main.py ~/animenow; \
-	cp -rp counter ~/animenow; \
-	cp -rp data ~/animenow; \
-	cp -rp main ~/animenow; \
-	cp -p start.sh ~/animenow
+	cp -p bars.py ~/Animenow; \
+	cp -p main.py ~/Animenow; \
+	cp -rp counter ~/Animenow; \
+	cp -rp data ~/Animenow; \
+	cp -rp main ~/Animenow; \
+	cp -p start.sh ~/Animenow
 	@echo "giving permissions..."
-	@cd ~/animenow; \
+	@cd ~/Animenow; \
 	chmod 777 start.sh; \
 	echo "creating binary..."; \
 	touch animenow.sh; \
@@ -25,7 +25,7 @@ install:
 	sudo cp animenow.sh /usr/bin/; \
 	cd /usr/bin/; \
 	sudo mv animenow.sh animenow
-	@cd ~/animenow; \
+	@cd ~/Animenow; \
 	rm animenow.sh
 	@echo "...done installing"
 	@cd ..; \
@@ -33,7 +33,7 @@ install:
 
 uninstall:
 	@echo "uninstalling..."
-	@rm -fr ~/animenow; \
+	@rm -fr ~/Animenow; \
 	cd /usr/bin/; \
 	sudo rm animenow
 	@echo "...done uninstalling"
