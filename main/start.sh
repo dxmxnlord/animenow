@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd ~/animenow
+cd ~/Animenow
 while [ true ]; do
 	clear
 	python3 -c "import main; main.disp_options()"
