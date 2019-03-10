@@ -6,8 +6,8 @@
 
 ## With Animenow you can:
 - Create a watchlist of all the on-going anime you watch.
-- Check for new episode of all the shows in your watchlist.
-- Maintain a episode counter for each show in your watchlist.
+- Check for new episodes of all the shows in your watchlist.
+- Maintain an episode counter for each show in your watchlist.
 - Download the next episode of a show in your counter.
 
 ## Requirements:
@@ -29,10 +29,10 @@ sudo make install
 animenow
 ```
 You can:
-- Maintain you watchlist. This checks if the show is a part of [Horriblesubs' Releases](https://horriblesubs.info/current-season/).
-- Check for new episodes. This needs access to [nyaa](nyaa.si).
-- Download the next episode for an anime from your anime counter as a torrent. Again, access to [nyaa](nyaa.si) is needed.
-- Manage individual shows' episode counter.
+- Maintain you watchlist. This also makes sure the show is a part of [Horriblesubs' Releases](https://horriblesubs.info/current-season/).
+- Check for new episodes from your watchlist. This needs access to [nyaa](nyaa.si). This automatically updates your watchlist with the latest episode number as well.
+- Download the next episode for an anime from your anime counter as a torrent ( only horriblesubs ). Again, access to [nyaa](nyaa.si) is needed.
+- Manage episode counters for every show you watch.
 
 ## Uninstalling:
 ```
