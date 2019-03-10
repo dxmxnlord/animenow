@@ -38,4 +38,4 @@ uninstall:
 	sudo rm animenow
 	@echo "...done uninstalling"
 
-.PHONY: default install clean
+.PHONY: default install uninstall
