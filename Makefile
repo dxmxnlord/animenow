@@ -30,7 +30,6 @@ install:
 	@echo "...done installing"
 	@cd ..; \
 	rm -fr animenow
-	@cd
 
 uninstall:
 	@echo "uninstalling..."
