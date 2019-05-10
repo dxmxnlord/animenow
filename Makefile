@@ -5,7 +5,7 @@
 default:
 	@echo "creating directories..."
 	@touch user.txt; \
-	echo $(whoami) >> "user.txt"
+	echo $(shell whoami) >> "user.txt"
 	@mkdir ~/Animenow
 	
 install:
