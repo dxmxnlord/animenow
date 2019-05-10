@@ -1,17 +1,17 @@
 
 
 
+
 default:
 	@echo "creating directories..."
 	@touch user.txt; \
 	echo $(whoami) >> "user.txt"
 	@mkdir ~/Animenow
-	@cd ~/Animenow; 
 	
 install:
 	@echo "installing animenow..."
 	@echo "copying files to appropriate directories..."
-	@user=$(shell cat user.txt); \
+	@export user=$(shell cat user.txt); \
 	cd main; \
 	cp -p bars.py /home/$${user}/Animenow; \
 	cp -p main.py /home/$${user}/Animenow; \
