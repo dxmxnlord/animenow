@@ -39,7 +39,7 @@ install:
 
 uninstall:
 	@echo "uninstalling..."
-	@user = $(cat user.txt); \
+	@export user=$(shell cat user.txt); \
 	rm -fr /home/$${user}/Animenow; \
 	cd /usr/bin/; \
 	sudo rm animenow
