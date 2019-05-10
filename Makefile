@@ -6,12 +6,12 @@ default:
 	@echo "creating directories..."
 	@touch user.txt; \
 	echo $(shell whoami) >> "user.txt"
-	@mkdir ~/Animenow
 	
 install:
 	@echo "installing animenow..."
 	@echo "copying files to appropriate directories..."
 	@export user=$(shell cat user.txt); \
+	mkdir /home/$${user}/Animenow; \
 	cd main; \
 	cp -p bars.py /home/$${user}/Animenow; \
 	cp -p main.py /home/$${user}/Animenow; \
@@ -41,8 +41,9 @@ uninstall:
 	@echo "uninstalling..."
 	@export user=$(shell cat user.txt); \
 	rm -fr /home/$${user}/Animenow; \
-	cd /usr/bin/; \
-	sudo rm animenow
+	sudo rm /usr/bin/animenow; \
+	cd ..; \
+	rm -fr animenow
 	@echo "...done uninstalling"
 
 .PHONY: default install uninstall
